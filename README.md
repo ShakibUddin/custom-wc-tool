@@ -30,7 +30,8 @@ My custom Node.js tool mimics `wc` by:
 
 ## 4. **Setup**
 - Clone the project
-- Copy the ccwc file and move it into ```/usr/local/bin/``` directory
+- Set the executable permission on the ccwc.js script by running ```chmod u+x ccwc.js```
+- Copy the ccwc file and move it into ```/usr/local/bin/``` directory by running ```sudo cp ccwc.js /usr/local/bin/ccwc```
    
 ## 5. **Example Usage**
 Run the tool from any terminal with the following syntax:
@@ -40,4 +41,4 @@ ccwc -l [file-path] # returns total lines in file
 ccwc -c [file-path] # returns total bytes in file
 ccwc -w [file-path] # returns total words in file
 ccwc -m [file-path] # returns total characters in file
-ccwc [file-path]    # returns total bytes, lines, words in file
+ccwc [file-path]    # returns total lines, words, bytes in file
